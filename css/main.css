@@ -40,6 +40,11 @@ h1 {
 
 h2 {
     font-size: 1.6rem;
+}
+
+h2,
+article p,
+ul {
     padding: 1.2rem;
 }
 
@@ -58,12 +63,12 @@ header p {
     padding-bottom: 1.2rem;
 }
 
-article p {
-    padding: 1.2rem;
+ul {
+    list-style-type: none;
 }
 
-ul {
-    padding: 1.2rem 2rem;
+li + li {
+    margin-top: 0.75rem;
 }
 
 /* Media Queries */
