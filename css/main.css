@@ -6,6 +6,7 @@
 
 html {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 *,
@@ -33,6 +34,7 @@ h1,
 h2 {
     background-color: #1b1c1c;
     color: #ffffff;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* Media Queries */
