@@ -13,3 +13,34 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+.hidden {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+header,
+article {
+    background-color: #e5eff0;
+    color: #1b1c1c;
+}
+
+h1,
+h2 {
+    background-color: #1b1c1c;
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+
+    header p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+}
