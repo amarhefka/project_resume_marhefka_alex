@@ -24,14 +24,18 @@ html {
     width: 1px;
 }
 
+body {
+    background-color: #f3f6f7;
+}
+
 h1,
 h2 {
-    background-color: #1b1c1c;
     color: #f3f6f7;
     font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
+    background-color: #1b1c1c;
     font-size: 2.3rem;
     letter-spacing: -0.02rem;
     margin: 1.2rem 0;
@@ -39,20 +43,22 @@ h1 {
 }
 
 h2 {
+    background: linear-gradient(60deg, #1b1c1c 12rem, #f3f6f7 12rem) #f3f6f7;
     font-size: 1.6rem;
+    padding: 0.9rem 1.2rem;
 }
 
-h2,
 article p,
 ul {
     padding: 1.2rem;
 }
 
 header,
-article {
+div {
     background-color: #e5eff0;
+    box-shadow: inset 0 -6px 14px -6px rgba(27, 28, 28, 0.25);
     color: #1b1c1c;
-    margin: 1.2rem auto;
+    margin: 0 auto 1.2rem;
 }
 
 header {
@@ -71,12 +77,36 @@ li + li {
     margin-top: 0.75rem;
 }
 
+h2,
+article p,
+ul {
+    margin: auto;
+    max-width: 860px;
+}
+
 /* Media Queries */
-@media (min-width: 900px) {
+@media (min-width: 600px) {
 
     header p {
         display: inline-block;
         vertical-align: middle;
+    }
+
+    header p + p {
+        padding-left: 5%;
+    }
+
+    header p:last-child {
+        text-align: left;
+    }
+
+}
+
+/* put a cap on spacing between contact info paragraphs */
+@media (min-width: 1700px) {
+
+    header p + p {
+        padding-left: 5rem;
     }
 
 }
