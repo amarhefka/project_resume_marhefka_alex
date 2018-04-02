@@ -54,11 +54,6 @@ header img {
     max-width: 300px;
 }
 
-article p,
-ul {
-    padding: 1.2rem;
-}
-
 li ul {
     padding-bottom: 0;
 }
@@ -80,8 +75,21 @@ header p {
     padding-bottom: 1.2rem;
 }
 
+article p {
+    padding: 1.2rem;
+}
+
 ul {
     list-style-type: none;
+    padding: 1.2rem 1.2rem 1.2rem 2.2rem;
+}
+
+ul li::before {
+    color: #1b1c1c;
+    content: '» ';
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: -0.85rem;
 }
 
 li + li {
