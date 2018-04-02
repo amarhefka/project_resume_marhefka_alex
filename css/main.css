@@ -55,7 +55,7 @@ header img {
 }
 
 li ul {
-    padding-bottom: 0;
+    padding: 0.4rem 1.2rem 0 2.2rem;
 }
 
 header,
@@ -84,6 +84,14 @@ ul {
     padding: 1.2rem 1.2rem 1.2rem 2.2rem;
 }
 
+div > ul > li + li {
+    margin-top: 0.8rem;
+}
+
+li ul li + li {
+    margin-top: 0.3rem;
+}
+
 ul li::before {
     color: #1b1c1c;
     content: '» ';
@@ -92,15 +100,19 @@ ul li::before {
     margin-left: -0.85rem;
 }
 
-li + li {
-    margin-top: 0.75rem;
-}
-
 h2,
 article p,
 ul {
     margin: auto;
     max-width: 860px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+time {
+    font-style: italic;
 }
 
 /* Media Queries */
