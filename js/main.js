@@ -6,7 +6,13 @@ $(document).ready(function () {
         $(this).animate({opacity: 1}, 600);
     });
 
+    // use jQuery-fullsizable plugin to allow full-screen viewing of the profile image
     $(function () {
         $('a.zoom').fullsizable();
+    });
+
+    // use custom jQuery to allow the user to collapse/expand the articles by clicking on them
+    $('article').on('click', function () {
+        $(this).children().first().siblings().slideToggle();
     });
 });
