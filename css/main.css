@@ -43,16 +43,15 @@ h1 {
 }
 
 h2 {
-    background: linear-gradient(60deg, #1b1c1c 12rem, #f3f6f7 12rem) #f3f6f7;
+    background: linear-gradient(60deg, #1b1c1c 12rem, #f3f6f7 12rem);
     font-size: 1.6rem;
     padding: 0.9rem 1.2rem;
 }
 
-img {
+header img {
     display: block;
     margin: 0 auto 1.2rem;
     max-width: 300px;
-    width: 70%;
 }
 
 article p,

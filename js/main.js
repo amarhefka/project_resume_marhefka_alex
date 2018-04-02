@@ -5,4 +5,8 @@ $(document).ready(function () {
     $('article').on('scrollin', function () {
         $(this).animate({opacity: 1}, 600);
     });
+
+    $(function () {
+        $('a.zoom').fullsizable();
+    });
 });
