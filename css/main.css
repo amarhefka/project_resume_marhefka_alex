@@ -115,6 +115,17 @@ time {
     font-style: italic;
 }
 
+a,
+a:active,
+a:visited {
+    color: #1b218d;
+}
+
+a:focus,
+a:hover {
+    outline: 0.2em outset #1b1c1c;
+}
+
 /* Media Queries */
 @media (min-width: 520px) {
 
