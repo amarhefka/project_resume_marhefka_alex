@@ -11,8 +11,8 @@ $(document).ready(function () {
         $('a.zoom').fullsizable();
     });
 
-    // use custom jQuery to allow the user to collapse/expand the articles by clicking on them
-    $('article').on('click', function () {
-        $(this).children().first().siblings().slideToggle();
+    // use custom jQuery to allow the user to collapse/expand the articles by clicking on the headings/tabs
+    $('h2').on('click', function () {
+        $(this).siblings().slideToggle();
     });
 });
