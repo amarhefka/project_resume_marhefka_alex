@@ -16,7 +16,7 @@ html {
 }
 
 .hidden {
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -134,7 +134,7 @@ a:hover {
     }
 
     h2 {
-        background: linear-gradient(60deg, #1b1c1c 13rem, #f3f6f7 13rem) #f3f6f7;
+        background: linear-gradient(60deg, #1b1c1c 13rem, #f3f6f7 13rem);
         font-size: 1.8rem;
     }
 
@@ -160,7 +160,7 @@ a:hover {
 @media (min-width: 860px) {
 
     h1 {
-        background: linear-gradient(60deg, #1b1c1c 24rem, #f3f6f7 24rem) #f3f6f7;
+        background: linear-gradient(60deg, #1b1c1c 24rem, #f3f6f7 24rem);
         text-align: left;
         padding-left: 1.2rem;
     }
@@ -178,6 +178,7 @@ a:hover {
         padding-left: 0;
     }
 
+    /* I use a negative margin here to remove the excess space due to relative positioning */
     header p:last-child {
         text-align: center;
         margin-bottom: -18.4rem;
